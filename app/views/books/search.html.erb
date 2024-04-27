@@ -1,0 +1,7 @@
+<p>
+  <%= form_with(method: :get, url: '/books/search', local: true) do %>
+    <%= label_tag 'Isbn' %>
+    <%= text_field(:book, :isbn) %>
+    <%= submit_tag 'Search' %>
+  <% end %>
+</p>

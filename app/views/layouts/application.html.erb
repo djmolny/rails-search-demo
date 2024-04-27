@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsSearchDemo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+
+    <%# RAILS-SEARCH-DEMO %>
+    <% if flash[:alert] %>
+      <p> <em> <%= flash[:alert] %> </em> </p>
+    <% end %>
+    <%# RAILS-SEARCH-DEMO %>
+
+    <%= yield %>
+
+  </body>
+</html>
